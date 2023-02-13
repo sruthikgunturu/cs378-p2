@@ -70,7 +70,9 @@ body {
 
 
   #Subtotals{
+    font-size: small;
     padding: 0%;
+    padding-top: 1.5%;
   }
 
   #subtotals_num{
