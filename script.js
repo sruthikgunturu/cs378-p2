@@ -49,7 +49,7 @@ function orderPop(){
     let sub = document.getElementById("subtotals_num");
     if(sub.value == 0){
         alert("No items in cart");
-    }
+    }else{
     let string = "Order placed!\n";
     let diff_food = document.querySelectorAll(".order_num");
     for(let i = 0; i < diff_food.length; i++){
@@ -60,4 +60,5 @@ function orderPop(){
     }
 
     alert(string);
+    }
 }
