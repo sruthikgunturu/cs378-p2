@@ -1,0 +1,116 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Boostrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <!-- Implement from below -->
+    <body>
+        <header>
+            <!-- you can add the logo image here -->
+            <img src="https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x.png"
+            alt="O Campus Cafe Logo"/>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="subheading">Delicious, From-Scratch Recipes Close at Hand</div>
+            </div>
+            <div class="row">
+                <div class="subsubheading">The fresh choices of UT!</div> 
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3" id="food" class="clearfix">
+                        <img id="food_pic" src="https://www.thechunkychef.com/wp-content/uploads/2018/02/Ultimate-Creamy-Baked-Mac-and-Cheese-feat.jpg" 
+                        alt="mac & cheese"/>
+                    </div>
+                    <div class="col-9">
+                        <div class="row" id="food">
+                            <div class="col-9" id="food_name">mac & cheese</div>
+                            <div class="col-3" id="food_price">$5</div>
+                            <form>
+                                <input type="button" onclick="updateOrder('minus','order_num_m', 'subtotals_num')" value="-" class="order" />
+                                <input class="col-3 order_num" name="mac & cheese" type="text" id="order_num_m" value="0"/>
+                                <input type="button" onclick="updateOrder('pos','order_num_m', 'subtotals_num')" value="+" class="order" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3" id="food" class="clearfix">
+                        <img id="food_pic" src="https://www.thechunkychef.com/wp-content/uploads/2022/07/Instant-Pot-Cheesy-Taco-Pasta-feat-440x550.jpg" 
+                        alt="pasta"/>
+                    </div>
+                    <div class="col-9">
+                        <div class="row" id="food">
+                            <div class="col-9" id="food_name">pasta</div>
+                            <div class="col-3" id="food_price">$8</div>
+                            <form>
+                                <input type="button" onclick="updateOrder('minus','order_num_p', 'subtotals_num')" value="-" class="order" />
+                                <input class="col-3 order_num" type="text" id="order_num_p" value="0" name="pasta"/>
+                                <input type="button" onclick="updateOrder('pos','order_num_p', 'subtotals_num')" value="+" class="order" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3" id="food" class="clearfix">
+                        <img id="food_pic" src="https://www.thechunkychef.com/wp-content/uploads/2014/11/Hawaiian-BBQ-Pork-Tacos-440x550.jpg" 
+                        alt="tacos"/>
+                    </div>
+                    <div class="col-9">
+                        <div class="row" id="food">
+                            <div class="col-9" id="food_name">tacos</div>
+                            <div class="col-3" id="food_price">$8</div>
+                            <form>
+                                <input type="button" onclick="updateOrder('minus','order_num_t', 'subtotals_num')" value="-" class="order" />
+                                <input class="col-3 order_num" type="text" id="order_num_t" value="0" name="tacos" />
+                                <input type="button" onclick="updateOrder('pos','order_num_t', 'subtotals_num')" value="+" class="order" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3" id="food" class="clearfix">
+                        <img id="food_pic" src="https://www.thechunkychef.com/wp-content/uploads/2020/01/Enchilada-Stuffed-Zucchini-Boats-feat.jpg" 
+                        alt="enchilada"/>
+                    </div>
+                    <div class="col-9">
+                        <div class="row" id="food">
+                            <div class="col-9" id="food_name">enchilada</div>
+                            <div class="col-3" id="food_price">$10</div>
+                            <form>
+                                <input type="button" onclick="updateOrder('minus','order_num_e', 'subtotals_num')" value="-" class="order" />
+                                <input class="col-3 order_num" type="text" id="order_num_e" value="0" name = "enchilada" />
+                                <input type="button" onclick="updateOrder('pos','order_num_e', 'subtotals_num')" value="+" class="order" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-3" id="Subtotals">Subtotal $</div>
+                    <input class="col-1" type ="text" id="subtotals_num" value="0"/>
+                    <div class="col-8 float-right">
+                        <input type="button" id="order_f" onclick="orderPop()" value="Order">
+                        <input type="button" id="clear" onclick="updateAll()" value="Clear All">
+                    </div>
+                </div>
+            </div>
+            
+    <script src="script.js"></script>
+    </body>
+</html>
