@@ -1,0 +1,109 @@
+body {
+    padding-top: 10px;
+    font-family:georgia;
+  }
+
+  
+
+  .row {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+
+  .subheading{
+    color:  blue;
+    text-shadow: 2px 2px 5px green;
+  }
+
+  .subsubheading{
+    font-style: italic;
+    padding-top: 0px;
+  }
+
+  .col-md-6, .col-md-12{
+    padding: 5px;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+
+  #food{
+    padding: 7px;
+  }
+
+  #food_pic{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    
+  }
+
+  #food_name{
+    text-align: left;
+    font-size: small;
+  }
+
+  #food_price{
+    text-align: left;
+  }
+
+  .order{
+    border-radius: 50%;
+    border: 1px solid black;
+    width: fit-content;
+    font-size: small;
+    direction: rtl;
+  }
+
+  .order_num{
+    text-align: center;
+    border: 0ch;
+    direction: rtl;
+  }
+
+
+  #Subtotals{
+    padding: 0%;
+  }
+
+  #subtotals_num{
+    padding: 0%;
+    border: 0ch;
+  }
+
+  #order_f{
+    border-radius: 30%;
+    border: 1px solid black;
+    width: fit-content;
+    font-size: small;
+    direction: rtl;
+    background-color: lightblue;
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #clear{
+    border-radius: 30%;
+    border: 1px solid black;
+    width: fit-content;
+    font-size: small;
+    direction: rtl;
+    padding: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
