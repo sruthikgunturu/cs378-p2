@@ -60,6 +60,5 @@ function orderPop(){
     }
 
     alert(string);
-    updateAll();
     }
 }
